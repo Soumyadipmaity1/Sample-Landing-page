@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background{
+
+    background-image: url(./pages/loginpages/login.jpg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.border-gradient-purple{
+
+    border: 3px solid;
+  border-image: linear-gradient(to top, #5FCAE7D1,#00C9FF, #8607c1); 
+  border-image-slice: 1;
 }
+.gradient{
+
+background-image: url(./pages/landing/components/Ellipse\ 3.png);
+background-repeat: no-repeat;
+
+}
+.arrow {
+    text-align: center;
+    align-items: center;
+    margin-left: 620px;
+    margin-bottom: 35px;
+    height: 25px;
+    width: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 4px 4px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
